@@ -1880,3 +1880,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Resume Download Button */
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffb400;
+  color: #000;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.resume-download-btn:hover {
+  background: #ffd369;
+  transform: translateY(-2px);
+}
+
+
+/* Make all service icons yellow */
+.service-icon-box ion-icon {
+  color: #ffb400;
+  font-size: 26px;
+}
+
+/* Optional: glow on hover (looks very good) */
+.service-item:hover .service-icon-box ion-icon {
+  color: #ffd369;
+  transform: scale(1.15);
+  transition: 0.25s ease;
+}
