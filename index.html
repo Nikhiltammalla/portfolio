@@ -5,56 +5,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Tammalla Nikhil | AI & Full-Stack Developer</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
 
   <main>
 
     <!--
       - #SIDEBAR
     -->
-
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Nikhil Tammalla" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Nikhil Tammalla">Tammalla Nikhil</h1>
-
-          <p class="title">CS Engineer • AI & Full-Stack Developer</p>
+          <h1 class="name" title="Nikhil Tammalla">Nikhil Tammalla</h1>
+          <p class="title">CS Engineer • AI & Full-Stack</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
 
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
@@ -74,85 +70,79 @@
               <address>Bangalore, Karnataka, India</address>
             </div>
           </li>
-
         </ul>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
             <a href="https://linkedin.com/in/nikhil-tammalla" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
             <a href="https://github.com/Nikhiltammalla" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
-
         </ul>
-
       </div>
 
     </aside>
 
-
     <!--
-      - #main-content
+      - #MAIN CONTENT
     -->
-
     <div class="main-content">
 
       <!--
         - #NAVBAR
       -->
-
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>
+              <ion-icon name="person-outline"></ion-icon>
+              <span>About</span>
+            </button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>
+              <ion-icon name="document-text-outline"></ion-icon>
+              <span>Resume</span>
+            </button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>
+              <ion-icon name="briefcase-outline"></ion-icon>
+              <span>Portfolio</span>
+            </button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link>
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>Contact</span>
+            </button>
           </li>
-
         </ul>
-
       </nav>
-
 
       <!--
         - #ABOUT
       -->
-
       <article class="about active" data-page="about">
-
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About Me</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I am a motivated Computer Science student with hands-on experience building web applications, scalable software systems, AI-powered applications, and intelligent chatbots. Strong in problem solving, fast learning, and delivering clean, reliable solutions. Passionate about transforming ideas into impactful, real-world products.
+            I am a motivated Computer Science student with hands-on experience building web applications, scalable software systems, AI-powered applications, and intelligent chatbots. Strong in problem-solving, fast learning, and delivering clean, reliable solutions. Passionate about transforming ideas into impactful, real-world products.
           </p>
         </section>
 
         <header>
-          <h2 class="h2 article-title">My mission</h2>
+          <h2 class="h2 article-title">My Mission</h2>
         </header>
 
         <section class="about-text">
@@ -161,22 +151,18 @@
           </p>
         </section>
 
-        <!--
-          - service
-        -->
-
+        <!-- Interests -->
         <section class="service">
-
-          <h3 class="h3 service-title">My interests</h3>
+          <h3 class="h3 service-title">My Interests</h3>
 
           <ul class="service-list">
-
             <li class="service-item">
               <div class="service-icon-box">
                 <ion-icon name="code-slash-outline"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Full Stack Development</h4>
+                <p class="service-item-text">Building modern, scalable, and responsive web applications from database schemas to polished frontend layouts.</p>
               </div>
             </li>
 
@@ -186,6 +172,7 @@
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Machine Learning</h4>
+                <p class="service-item-text">Designing and training predictive classifiers, custom regression models, and automated engineering pipelines.</p>
               </div>
             </li>
 
@@ -195,6 +182,7 @@
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Deep Learning</h4>
+                <p class="service-item-text">Implementing advanced neural network architectures, attention mechanisms, and medical image segmentation models.</p>
               </div>
             </li>
 
@@ -204,19 +192,14 @@
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">Crafting high-performance APIs, real-time WebSocket systems, secure signal relays, and microservice backends.</p>
               </div>
             </li>
-
           </ul>
-
         </section>
 
-        <!--
-          - Education
-        -->
-
+        <!-- Education Timeline in About page -->
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
@@ -225,12 +208,11 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Amrita Vishwa Vidyapeetham</h4>
               <span>2022 — 2026</span>
               <p class="timeline-text">
-                B.Tech in Computer Science<br>
+                B.Tech in Computer Science & Engineering<br>
                 GPA: 7.0 / 10.0
               </p>
             </li>
@@ -239,7 +221,7 @@
               <h4 class="h4 timeline-item-title">SR College</h4>
               <span>2020 — 2022</span>
               <p class="timeline-text">
-                High School<br>
+                High School (Intermediate Education)<br>
                 Percentage: 87%
               </p>
             </li>
@@ -252,52 +234,41 @@
                 Percentage: 98%
               </p>
             </li>
-
           </ol>
-
         </section>
-
       </article>
-
 
       <!--
         - #RESUME
       -->
-
       <article class="resume" data-page="resume">
-
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <div style="margin-bottom: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
-  <a href="./assets/images/Nikhil_Resume_FullStack.pdf" download class="resume-download-btn">
-    <ion-icon name="download-outline"></ion-icon>
-    <span>Full-Stack Resume</span>
-  </a>
-  <a href="./assets/images/Nikhil_Resume_DataScience.pdf" download class="resume-download-btn">
-    <ion-icon name="download-outline"></ion-icon>
-    <span>Data Science Resume</span>
-  </a>
-  <a href="./assets/images/Nikhil_Resume_AI.pdf" download class="resume-download-btn">
-    <ion-icon name="download-outline"></ion-icon>
-    <span>AI Resume</span>
-  </a>
-</div>
+        <div style="margin-bottom: 30px;">
+          <a href="./assets/images/Nikhil_Resume.pdf" download class="resume-download-btn">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download PDF Resume</span>
+          </a>
+        </div>
 
-        <!-- Skills -->
-        <section class="skill">
+        <!-- Skills Grid -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-working-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Technical Expertise</h3>
+          </div>
 
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
+          <ul class="skills-list">
             <li class="service-item">
               <div class="service-icon-box">
                 <ion-icon name="code-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Programming</h4>
+                <h4 class="h4 service-item-title">Programming Languages</h4>
                 <p class="service-item-text">Python • Java • C • JavaScript • HTML • CSS</p>
               </div>
             </li>
@@ -307,7 +278,7 @@
                 <ion-icon name="server-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Development</h4>
+                <h4 class="h4 service-item-title">Backend Frameworks & Real-Time</h4>
                 <p class="service-item-text">FastAPI • Django • Node.js • REST APIs • WebSockets • Socket.IO • Real-Time Systems • API Design</p>
               </div>
             </li>
@@ -317,8 +288,8 @@
                 <ion-icon name="desktop-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frontend Development</h4>
-                <p class="service-item-text">Responsive UI Design • HTML • CSS • JavaScript</p>
+                <h4 class="h4 service-item-title">Frontend Design</h4>
+                <p class="service-item-text">Responsive UI Design • HTML5 • CSS3 • Modern JavaScript</p>
               </div>
             </li>
 
@@ -328,7 +299,7 @@
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Machine Learning</h4>
-                <p class="service-item-text">scikit-learn • Supervised Learning • Classification • Regression • Feature Engineering • Model Evaluation • Computer Vision</p>
+                <p class="service-item-text">scikit-learn • Supervised Learning • Classification • Regression • Feature Engineering • Model Evaluation</p>
               </div>
             </li>
 
@@ -337,8 +308,8 @@
                 <ion-icon name="git-network-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Deep Learning</h4>
-                <p class="service-item-text">CNNs • U-Net • Attention Mechanisms • Residual Networks • TensorFlow/Keras • PyTorch • Medical Image Analysis</p>
+                <h4 class="h4 service-item-title">Deep Learning & CV</h4>
+                <p class="service-item-text">CNNs • U-Net • Attention Mechanisms • Residual Networks • TensorFlow • PyTorch • Medical Image Analysis</p>
               </div>
             </li>
 
@@ -354,11 +325,11 @@
 
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="server"></ion-icon>
+                <ion-icon name="cube-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Databases</h4>
-                <p class="service-item-text">MySQL • SQLite • Supabase • Qdrant</p>
+                <h4 class="h4 service-item-title">Databases & Storage</h4>
+                <p class="service-item-text">MySQL • SQLite • Supabase • Qdrant Vector Database</p>
               </div>
             </li>
 
@@ -367,18 +338,15 @@
                 <ion-icon name="construct-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Tools & Platforms</h4>
-                <p class="service-item-text">Git • Linux • VS Code • Postman • Jupyter Notebook</p>
+                <h4 class="h4 service-item-title">Tools & Infrastructure</h4>
+                <p class="service-item-text">Git • Linux/Shell • VS Code • Postman • Jupyter Notebook</p>
               </div>
             </li>
-
           </ul>
-
         </section>
 
         <!-- Certifications -->
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="ribbon-outline"></ion-icon>
@@ -387,85 +355,87 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h4>
               <span>2025</span>
-              <p class="timeline-text">Oracle</p>
+              <p class="timeline-text">Issued by Oracle</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Python Mega Course</h4>
+              <h4 class="h4 timeline-item-title">Python Mega Course: Build 10 Real-World Applications</h4>
               <span>2023</span>
-              <p class="timeline-text">Udemy</p>
+              <p class="timeline-text">Issued by Udemy</p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Graph Theory Programming Bootcamp</h4>
+              <h4 class="h4 timeline-item-title">Graph Theory & Coding Interview Programming Bootcamp</h4>
               <span>2023</span>
-              <p class="timeline-text">AlgoUniversity</p>
+              <p class="timeline-text">Issued by AlgoUniversity</p>
             </li>
-
           </ol>
-
         </section>
 
         <!-- Publications -->
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="newspaper-outline"></ion-icon>
             </div>
-            <h3 class="h3">Publications</h3>
+            <h3 class="h3">Research & Publications</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">ResDenseAtt-UNet: An Attention-Enhanced DenseUNet Model for Dental Segmentation</h4>
-              <span>2024</span>
-              <p class="timeline-text">ICSSCC</p>
+              <span>ICSSCC 2024</span>
+              <p class="timeline-text">Research paper on optimizing deep segmentation networks with spatial attention modules for high-precision dental radiograph diagnosis.</p>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Real-Time Web Chat Application with Live Performance Metrics</h4>
-              <span>2024</span>
-              <p class="timeline-text">IEEE</p>
+              <span>IEEE 2024</span>
+              <p class="timeline-text">Technical paper focusing on high-concurrency client-server synchronization, latency analysis, and hardware throughput scaling under web socket sockets.</p>
             </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Healthcare AI - Dental Assessment Chatbot</h4>
-              <span>2025</span>
-              <p class="timeline-text">IEEE</p>
+              <span>IEEE 2025</span>
+              <p class="timeline-text">Integration of custom LLaMA-based medical conversational models with cloud architectures and appointment databases for preliminary patient screening.</p>
             </li>
-
           </ol>
-
         </section>
-
       </article>
-
 
       <!--
         - #PORTFOLIO
       -->
-
       <article class="portfolio" data-page="portfolio">
-
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Project Portfolio</h2>
         </header>
 
         <section class="projects">
-
-          <ul class="filter-list">
+          <!-- Desktop Filter List -->
+          <ul class="filter-list" style="display: flex;">
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Deep Learning</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Systems</button>
+            </li>
           </ul>
 
-          <div class="filter-select-box" style="display:none;">
+          <!-- Mobile Select List -->
+          <div class="filter-select-box">
             <button class="filter-select" data-select>
               <div class="select-value" data-selecct-value>All</div>
               <div class="select-icon">
@@ -476,12 +446,24 @@
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Deep Learning</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Systems</button>
+              </li>
             </ul>
           </div>
 
+          <!-- Project List Grid -->
           <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="machine learning">
               <a href="https://github.com/Nikhiltammalla/Assessing-confidence-and-clarity-for-interview-answers-using-Machine-Learning" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -489,13 +471,13 @@
                   </div>
                   <img src="./assets/images/confidence.png" alt="ML Confidence" loading="lazy">
                 </figure>
-                <h3 class="project-title">Assessing Confidence & Clarity of Interview Responses using Machine Learning</h3>
+                <h3 class="project-title">Assessing Confidence & Clarity of Interview Responses</h3>
                 <p class="project-category">Machine Learning</p>
-                <p class="project-description">NLP-based classifier using 20+ linguistic features to assess confidence and clarity in interview responses. Achieved 91% accuracy across 5 models including XGBoost and Random Forest.</p>
+                <p class="project-description">NLP classifier using 20+ linguistic metrics to score confidence/clarity in verbal answers. Achieved 91% accuracy across models including XGBoost.</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="systems">
               <a href="https://github.com/Nikhiltammalla/Secure-VOIP-communication" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -505,11 +487,11 @@
                 </figure>
                 <h3 class="project-title">Secure VoIP Communication</h3>
                 <p class="project-category">Systems</p>
-                <p class="project-description">End-to-end encrypted VoIP communication system with secure signaling and real-time audio transmission over the network.</p>
+                <p class="project-description">End-to-end encrypted voice calling system with custom authentication signaling, secure key exchange, and real-time audio transmission.</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Nikhiltammalla/chat-app-websockets" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -519,11 +501,11 @@
                 </figure>
                 <h3 class="project-title">Real-Time Chat Application</h3>
                 <p class="project-category">Web Development</p>
-                <p class="project-description">Modular WebSocket chat platform supporting 50+ concurrent connections with sub-100ms latency and a live performance monitoring dashboard tracking P95 latency and throughput.</p>
+                <p class="project-description">Sub-100ms latency chat server supporting 50+ concurrent users with an integrated live metrics board detailing message queues and CPU loads.</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="deep learning">
               <a href="https://github.com/Nikhiltammalla/Automatic-dental-radiograph-segmentation" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -533,11 +515,11 @@
                 </figure>
                 <h3 class="project-title">Automatic Dental Segmentation</h3>
                 <p class="project-category">Deep Learning</p>
-                <p class="project-description">Hybrid deep learning pipeline for dental radiograph segmentation across 3,000+ images, achieving 87% Dice Score and 82% IoU using attention-enhanced architectures.</p>
+                <p class="project-description">Hybrid U-Net with attention gates trained on 3,000+ radiograph images, achieving 87% Dice Score for localized clinical anomalies.</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="https://github.com/Nikhiltammalla/dentalAiAgent" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -545,13 +527,13 @@
                   </div>
                   <img src="./assets/images/dental_bot.png" alt="Dental Chatbot" loading="lazy">
                 </figure>
-                <h3 class="project-title">Dental AI Chatbot</h3>
-                <p class="project-category">Web Development & Machine Learning</p>
-                <p class="project-description">AI-driven dental assessment platform combining intraoral image analysis and LLaMA 3.2B chatbot, reducing preliminary diagnosis time by ~60% with integrated appointment booking via Supabase.</p>
+                <h3 class="project-title">Dental AI Agent Chatbot</h3>
+                <p class="project-category">Web Development</p>
+                <p class="project-description">Generative AI assistant merging LLaMA conversational guidance with clinical appointment scheduling and user profiles using Supabase.</p>
               </a>
             </li>
 
-            <li class="project-item active" data-filter-item data-category="all">
+            <li class="project-item active" data-filter-item data-category="systems">
               <a href="https://github.com/Nikhiltammalla/NewsScraper" target="_blank">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -559,27 +541,21 @@
                   </div>
                   <img src="./assets/images/newsscraper.jpg" alt="News Scraper" loading="lazy">
                 </figure>
-                <h3 class="project-title">News Scraper</h3>
+                <h3 class="project-title">Automated News Scraper</h3>
                 <p class="project-category">Systems</p>
-                <p class="project-description">Automated news scraping pipeline that aggregates and parses articles from multiple sources with structured data extraction and clean output formatting.</p>
+                <p class="project-description">Scalable scraping engine scheduling background collection tasks, normalization, and structured storage of feeds from multiple global agencies.</p>
               </a>
             </li>
-
           </ul>
-
         </section>
-
       </article>
-
 
       <!--
         - #CONTACT
       -->
-
       <article class="contact" data-page="contact">
-
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title">Get in Touch</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -589,41 +565,32 @@
         </section>
 
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
 
           <form action="#" class="form" data-form>
-
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message..." required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
+              <ion-icon name="paper-plane-outline"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
 
     </div>
 
   </main>
 
-  <!--
-    - custom js link
-  -->
+  <!-- Custom JS Link -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+  <!-- IonIcon Link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
